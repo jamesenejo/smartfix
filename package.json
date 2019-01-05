@@ -1,0 +1,32 @@
+{
+  "name": "smartfix",
+  "version": "1.0.0",
+  "description": "smartfix api",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon --exec babel-node src/app.js",
+    "heroku-postbuild": "babel src --out-dir dist",
+    "start": "node dist/app.js"
+  },
+  "author": "King James Enejo",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.2.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
